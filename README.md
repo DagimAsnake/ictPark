@@ -1,3 +1,5 @@
-# FIRST ### `npm install`
+# FIRST 
+### `npm install`
 
+## Then
 ##### `npm start`
