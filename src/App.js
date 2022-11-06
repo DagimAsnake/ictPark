@@ -5,6 +5,8 @@ import Footer from './partials/Footer'
 import Home from './components/Home';
 import Request from './components/Request';
 import Report from './components/Report';
+import Login from './components/Login';
+import Register from './components/Register';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/request" element={<Request />} />
           <Route exact path="/report" element={<Report />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/register" element={<Register />} />
         </Routes>
         <Footer />
       </div>
