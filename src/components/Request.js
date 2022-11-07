@@ -36,27 +36,27 @@ function Request() {
                                 <label htmlFor="workLoc" className="form-label">Work Location</label>
                                 <input type="text" id='workLoc' name='workLoc' className="form-control" placeholder='work location' value={workLoc} onChange={e => { setWorkLoc(e.target.value) }} />
                             </div>
-                            <div class="row">
+                            <div className="row">
                                 <h5>Contact Person</h5>
-                                <div class="col-md">
-                                    <div class="form-row mb-3">
-                                        <label htmlfor="name"> Name </label>
+                                <div className="col-md">
+                                    <div className="form-row mb-3">
+                                        <label htmlFor="name"> Name </label>
                                         <input type="text" id="name" name='name' className="form-control" placeholder='Name' value={name} onChange={e => setName(e.target.value)} />
                                     </div>
                                 </div>
-                                <div class="col-md">
-                                    <div class=" form-row mb-3">
-                                        <label htmlfor="phone"> Phone number </label>
+                                <div className="col-md">
+                                    <div className=" form-row mb-3">
+                                        <label htmlFor="phone"> Phone number </label>
                                         <input type="number" id="phone" name='phone' className="form-control" placeholder='Phone number' value={phone} onChange={e => setPhone(e.target.value)} />
                                     </div>
                                 </div>
                             </div>
                             <h5>Department Service Category</h5>
-                            <div class="row mb-3">
-                                <div class="col-md form-check form-check-inline">
-                                    <input name="category" type="radio" class="form-check-input" id="ict" value="ict" onChange={e => { setCategory(e.target.value) }} />
-                                    <label htmlfor="ict" class="form-check-label"> Ict </label>
-                                    <select class="form-select mt-2" aria-label="Default select example" onChange={e => { setIct(e.target.value) }}>
+                            <div className="row mb-3">
+                                <div className="col-md form-check form-check-inline">
+                                    <input name="category" type="radio" className="form-check-input" id="ict" value="ict" onChange={e => { setCategory(e.target.value) }} />
+                                    <label htmlFor="ict" className="form-check-label"> Ict </label>
+                                    <select className="form-select mt-2" aria-label="Default select example" onChange={e => { setIct(e.target.value) }}>
                                         <option value="Internet Service" selected>Internet Service</option>
                                         <option value="VOI (Voice Over Internet)">VOI (Voice Over Internet)</option>
                                         <option value="Web Hosting">Web Hosting</option>
@@ -66,20 +66,20 @@ function Request() {
                                         <option value="ICT Support">ICT Support</option>
                                     </select>
                                 </div>
-                                <div class="col-md form-check form-check-inline">
-                                    <input name="category" type="radio" class="form-check-input" id="facility" value="facility" onChange={e => { setCategory(e.target.value) }} />
-                                    <label htmlfor="facility" class="form-check-label">Facility</label>
-                                    <select class="form-select mt-2" aria-label="Default select example" onChange={e => { setFacility(e.target.value) }}>
+                                <div className="col-md form-check form-check-inline">
+                                    <input name="category" type="radio" className="form-check-input" id="facility" value="facility" onChange={e => { setCategory(e.target.value) }} />
+                                    <label htmlFor="facility" className="form-check-label">Facility</label>
+                                    <select className="form-select mt-2" aria-label="Default select example" onChange={e => { setFacility(e.target.value) }}>
                                         <option value="General Maintenance" selected>General Maintenance</option>
                                         <option value="Sewer">Sewer</option>
                                         <option value="Electricity">Electricity</option>
                                         <option value="Water">Water</option>
                                     </select>
                                 </div>
-                                <div class="col-md-5 form-check form-check-inline">
-                                    <input name="category" type="radio" class="form-check-input" id="investor" value="investor" onChange={e => { setCategory(e.target.value) }} />
-                                    <label htmlfor="investor" class="form-check-label">Investor Follow-up & Support</label>
-                                    <select class="form-select mt-2" aria-label="Default select example" onChange={e => { setInvestor(e.target.value) }}>
+                                <div className="col-md-5 form-check form-check-inline">
+                                    <input name="category" type="radio" className="form-check-input" id="investor" value="investor" onChange={e => { setCategory(e.target.value) }} />
+                                    <label htmlFor="investor" className="form-check-label">Investor Follow-up & Support</label>
+                                    <select className="form-select mt-2" aria-label="Default select example" onChange={e => { setInvestor(e.target.value) }}>
                                         <option value="Make Promotion" selected>Make Promotion</option>
                                         <option value="Follow Up & Support Investor">Follow Up & Support Investor</option>
                                         <option value="Collect Plan Report">Collect Plan Report</option>
@@ -89,34 +89,34 @@ function Request() {
                                 </div>
                             </div>
                             <h5>Description of Requested Maintenance or Work</h5>
-                            <div class="my-3">
-                                <textarea class="form-control" placeholder='Description' name='description' rows={5} onChange={e => { setDesc(e.target.value) }} >{desc}</textarea>
+                            <div className="my-3">
+                                <textarea className="form-control" placeholder='Description' name='description' rows={5} onChange={e => { setDesc(e.target.value) }} >{desc}</textarea>
                             </div>
                             <h5>Requested Priority</h5>
-                            <div class="form-row mb-3">
-                                <div class="col-md form-check form-check-inline">
-                                    <input name="priority" type="radio" class="form-check-input" id="high" value="high" onChange={e => setPriority(e.target.value)} />
-                                    <label htmlfor="high" class="form-check-label"> High </label>
+                            <div className="form-row mb-3">
+                                <div className="col-md form-check form-check-inline">
+                                    <input name="priority" type="radio" className="form-check-input" id="high" value="high" onChange={e => setPriority(e.target.value)} />
+                                    <label htmlFor="high" className="form-check-label"> High </label>
                                 </div>
-                                <div class="col-md form-check form-check-inline">
-                                    <input name="priority" type="radio" class="form-check-input" id="medium" value="medium" onChange={e => setPriority(e.target.value)} />
-                                    <label htmlfor="medium" class="form-check-label">Medium</label>
+                                <div className="col-md form-check form-check-inline">
+                                    <input name="priority" type="radio" className="form-check-input" id="medium" value="medium" onChange={e => setPriority(e.target.value)} />
+                                    <label htmlFor="medium" className="form-check-label">Medium</label>
                                 </div>
-                                <div class="col-md form-check form-check-inline">
-                                    <input name="priority" type="radio" class="form-check-input" id="low" value="low" onChange={e => setPriority(e.target.value)} />
-                                    <label htmlfor="low" class="form-check-label">Low</label>
+                                <div className="col-md form-check form-check-inline">
+                                    <input name="priority" type="radio" className="form-check-input" id="low" value="low" onChange={e => setPriority(e.target.value)} />
+                                    <label htmlFor="low" className="form-check-label">Low</label>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md">
-                                    <div class="form-row mb-3">
-                                        <label htmlfor="date"><b>Date of Request</b> </label>
+                            <div className="row">
+                                <div className="col-md">
+                                    <div className="form-row mb-3">
+                                        <label htmlFor="date"><b>Date of Request</b> </label>
                                         <input type="date" id="date" className="form-control" placeholder='' value={date} onChange={e => setDate(e.target.value)} />
                                     </div>
                                 </div>
-                                <div class="col-md">
-                                    <div class=" form-row mb-3">
-                                        <label htmlfor="time"><b>Time </b></label>
+                                <div className="col-md">
+                                    <div className=" form-row mb-3">
+                                        <label htmlFor="time"><b>Time </b></label>
                                         <input type="time" id="time" className="form-control" placeholder='' value={time} onChange={e => setTime(e.target.value)} />
                                     </div>
                                 </div>
